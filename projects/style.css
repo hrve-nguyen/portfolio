@@ -13,3 +13,19 @@
 html {
   font-family: Pixelify Sans;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.temp {
+  text-align: center;
+  margin-top: 5em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
