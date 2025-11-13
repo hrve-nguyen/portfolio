@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans);
+
+:root {
+  --highlight-color: #b90000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Pixelify Sans;
+}
+
+.harvey-drawing {
+  align-items: center;
+}
+
+.img_div {
+  margin-left: 9em;
+  margin-top: 0em;
+}
+
+.title {
+  color: rgb(126, 28, 28);
+  margin-top: 1em;
+  margin-left: 6em;
+}
+
+.footer {
+  font-size: 0.7em;
+  margin-left: 35em;
+  margin-top: 3em;
+}
+
+.main_title {
+  margin-top: 1em;
+  margin-left: 2em;
+  color: rgb(134, 43, 43);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.link_list {
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+.list_item {
+  display: flex;
+  margin: 2em 12em;
+}
+
+.first_item {
+  margin-top: 6em;
+}
+
+.link_list:first-child {
+  padding: 200px;
+}
+
+.a_item {
+  padding-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.list_item:hover {
+  text-decoration: underline;
+}
+
+.a_item:hover {
+  text-decoration: underline;
+}
