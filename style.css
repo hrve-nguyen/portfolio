@@ -16,11 +16,14 @@ html {
 
 .harvey-drawing {
   align-items: center;
+  max-width: 100%;
 }
 
 .img_div {
   margin-left: 9em;
   margin-top: 0em;
+  max-width: 100%;
+  height: auto;
 }
 
 .title {
@@ -31,7 +34,7 @@ html {
 
 .footer {
   font-size: 0.7em;
-  margin-left: 35em;
+  margin-left: 35vw;
   margin-top: 3em;
 }
 
@@ -47,20 +50,60 @@ html {
 
 .link_list {
   list-style-type: none;
-  font-size: 1.1em;
 }
 
 .list_item {
   display: flex;
-  margin: 2em 12em;
+  margin: 2em 15vw;
+}
+
+.list_item p {
+  min-width: 5vw;
 }
 
 .first_item {
-  margin-top: 6em;
+  margin-top: 5em;
 }
 
-.link_list:first-child {
-  padding: 200px;
+.list_item p,
+.a_item {
+  font-size: clamp(0.5em, 2vw, 3em);
+}
+
+@media screen and (max-width: 600px) {
+  .list_item {
+    margin-left: 15vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flex-container {
+    display: block;
+  }
+
+  .img_div {
+    margin-bottom: 0px;
+  }
+
+  .list_item {
+    margin-top: 0vw;
+  }
+
+  .list_item {
+    margin-top: 0vw;
+  }
+
+  .first_item {
+    margin-top: 1em;
+  }
+
+  .title {
+    font-size: 2vw;
+  }
+
+  .footer {
+    font-size: 1vw;
+  }
 }
 
 .a_item {
