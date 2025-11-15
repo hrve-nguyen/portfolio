@@ -1,9 +1,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans);
 
 :root {
-  --highlight-color: #b90000;
+  --red: #7e1c1c;
 }
 
+body {
+  background-color: rgb(214, 218, 189);
+
+  background-color: white;
+  background-image: url("images/harvey_drawing.jpg");
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,103 +27,63 @@ html {
   max-width: 100%;
 }
 
-.img_div {
-  margin-left: 9em;
-  margin-top: 0em;
-  max-width: 100%;
-  height: auto;
-}
-
 .title {
-  color: rgb(126, 28, 28);
-  margin-top: 1em;
-  margin-left: 6em;
-}
-
-.footer {
-  font-size: 0.7em;
-  margin-left: 35vw;
-  margin-top: 3em;
-}
-
-.main_title {
-  margin-top: 1em;
-  margin-left: 2em;
-  color: rgb(134, 43, 43);
-}
-
-.flex-container {
-  display: flex;
+  color: var(--red);
+  margin-top: 0.1em;
+  margin-left: 0.5em;
+  font-size: clamp(0vw, 2vw, 1.2em);
 }
 
 .link_list {
   list-style-type: none;
+  margin-left: 65vw;
+  margin-top: 8vw;
 }
 
-.list_item {
-  display: flex;
-  margin: 2em 15vw;
+.link_list li:nth-child(even) {
+  margin-left: 2em;
 }
 
-.list_item p {
-  min-width: 5vw;
-}
-
-.first_item {
-  margin-top: 5em;
-}
-
-.list_item p,
-.a_item {
-  font-size: clamp(0.5em, 2vw, 3em);
-}
-
-@media screen and (max-width: 600px) {
-  .list_item {
-    margin-left: 15vw;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .flex-container {
-    display: block;
-  }
-
-  .img_div {
-    margin-bottom: 0px;
-  }
-
-  .list_item {
-    margin-top: 0vw;
-  }
-
-  .list_item {
-    margin-top: 0vw;
-  }
-
-  .first_item {
-    margin-top: 1em;
-  }
-
-  .title {
-    font-size: 2vw;
-  }
-
-  .footer {
-    font-size: 1vw;
-  }
-}
-
-.a_item {
-  padding-left: 20px;
+.link_list li a {
   text-decoration: none;
+  margin-bottom: 2em;
+  color: var(--red);
+  display: flex;
+}
+
+.link_list li a p {
   color: black;
 }
 
-.list_item:hover {
+.link_list li {
+  display: flex;
+  font-size: clamp(0.4em, 4vw, 1.3em);
+}
+
+.link_list li:hover {
   text-decoration: underline;
 }
 
-.a_item:hover {
-  text-decoration: underline;
+.footer {
+  font-size: clamp(0.2em, 2vw, 0.7em);
+  margin-right: 20vw;
+}
+
+.footer_div {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.background {
+  position: relative;
+}
+
+.background pre {
+  position: absolute;
+  right: 3vw;
+  top: -3vw;
+  font-size: 0.9vw;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
 }
