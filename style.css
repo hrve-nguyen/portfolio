@@ -22,11 +22,6 @@ html {
   font-family: Pixelify Sans;
 }
 
-.harvey-drawing {
-  align-items: center;
-  max-width: 100%;
-}
-
 .title {
   color: var(--red);
   margin-top: 0.1em;
@@ -55,13 +50,16 @@ html {
   color: black;
 }
 
-.link_list li {
-  display: flex;
-  font-size: clamp(0.4em, 4vw, 1.3em);
+.link_list li:hover a p:after {
+  content: "✦";
 }
 
-.link_list li:hover {
-  text-decoration: underline;
+.link_list li a p:after {
+  content: "✧";
+}
+
+.link_list li {
+  font-size: clamp(0.4em, 4vw, 1.3em);
 }
 
 .footer {
