@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans);
 
 :root {
-  --highlight-color: #b90000;
+  --red: #7e1c1c;
 }
 
 * {
@@ -12,20 +12,143 @@
 
 html {
   font-family: Pixelify Sans;
+  background-image: url(../images/harvey_dot2.png);
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 a {
+  font-family: Pixelify Sans;
   text-decoration: none;
-  color: black;
-  margin-top: 1em;
-  display: inline-block;
-}
-
-.temp {
-  text-align: center;
-  margin-top: 5em;
+  color: var(--red);
+  background-color: white;
+  text-shadow: 2px 2px white;
+  border: 2px solid var(--red);
+  font-size: 2vw;
+  position: absolute;
+  top: 90vh;
+  left: 40vw;
 }
 
 a:hover {
+  transform: translateY(-3px);
+  background-color: white;
+}
+
+.page-div {
+  display: grid;
+  grid-template-columns: 45vw 1fr;
+  align-items: start;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.title {
+  color: var(--red);
+  font-size: clamp(0vw, 1.2vw, 1.2em);
+  font-weight: bolder;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.tv {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-top: 20vh;
+}
+
+.caption {
+  position: absolute;
+  font-size: 1.2vw;
+  left: 60%;
+  top: 29%;
+  z-index: 3492034;
+  color: var(--red);
+  display: inline-block;
+}
+
+.screen {
+  width: 45%;
+  top: 60%;
+  left: 45%;
+  aspect-ratio: 16/9;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.frame {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 30%;
+  height: 20%;
+  color: var(--red);
+
+  font-family: Pixelify Sans;
+  font-size: 3vw;
+  z-index: 10;
+
+  background-color: transparent;
+  border: none;
+}
+
+.play:hover {
   text-decoration: underline;
+}
+
+.change {
+  font-family: Pixelify Sans;
+  position: absolute;
+  top: 80%;
+  left: 43%;
+  z-index: 20;
+  background-color: var(--red);
+  color: white;
+  padding: 0.5%;
+  display: none;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+.change:hover {
+  background-color: white;
+  color: var(--red);
+  font-weight: bold;
+  border-color: var(--red);
+}
+
+.right-half {
+  max-width: 90%;
+  min-width: 300px;
+  display: flex;
+  padding-top: 5%;
+  padding-left: 15%;
+  flex-direction: column;
+  margin-left: auto;
+  overflow: hidden;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.about-text {
+  color: var(--red);
+  line-height: 150%;
+  font-size: clamp(10px, 1.2vw, 22px);
+  padding-right: 3%;
+}
+.footer {
+  margin-left: auto;
+  content: url("../images/bunnies.png");
+  width: min(40vw, 450px);
 }

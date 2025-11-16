@@ -7,9 +7,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="temp">
-      <p>In Progress</p>
-      <a href="../"> --> Back to Home</a>
+    <div class="page-div">
+      <div class="tv">
+        <img id="screen" class="screen" src="../images/pic1.jpeg" />
+        <img class="frame" src="../images/tv.png" />
+        <button id="play" onClick="play()" class="play">play</button>
+        <button id="change" class="change" onClick="changeImage()">next</button>
+        <p class="caption" id="caption"></p>
+      </div>
+
+      <div class="right-half">
+        <p class="about-text">
+          Harvey Thuan Hoa Nguyen, based in Los Angeles County.
+          <br />
+          <br />
+
+          I am a junior at UCLA studying a major in Computer Science and minor
+          in Digital Humanities. Though I have worked on many full-stack
+          projects, my expertise lies with frontend development and website
+          design, especially when I can bring my creative vision to the table.
+          <br />
+          <br />
+          In my free time, I enjoy making clothes that I overwear, hunting for
+          BOGO deals with my parents down in Westminster, taking the bus around
+          the city with my friends, getting 125% sugar in my drinks, having
+          dance parties with my niece, and talking to my dog.
+        </p>
+        <img class="footer" />
+        <a href="../"> --> Back to Home</a>
+        <pre class="title">
+  /\    |~~\   /~~\   |   |  ~~|~~  
+ /__\   |--<  |    |  |   |    |    
+/    \  |__/   \__/    \_/     |    
+                            
+        </pre>
+      </div>
     </div>
+    <script src="./about.js"></script>
   </body>
 </html>
