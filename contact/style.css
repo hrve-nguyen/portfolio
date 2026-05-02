@@ -3,7 +3,6 @@
 :root {
   --highlight-color: #b90000;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +13,67 @@ html {
   font-family: Pixelify Sans;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  margin-top: 1em;
-  display: inline-block;
+body {
+  background: #7e1c1c;
 }
 
-.temp {
-  text-align: center;
-  margin-top: 5em;
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 1em;
+  display: inline-block;
+  font-size: 1em;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 4rem;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.text {
+  text-align: left;
+  margin-top: 2em;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+}
+
+.text p {
+  margin-bottom: 0.5em;
+  font-size: 2rem;
+}
+
+.text ul {
+  list-style: none;
+}
+
+.fox {
+  height: 30vh;
+  margin-top: 12rem;
+  filter: grayscale(1) contrast(1) brightness(1);
+  animation: float 4s ease-in-out infinite;
+}
+
+.fox:hover {
+  filter: grayscale(0);
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
 }
