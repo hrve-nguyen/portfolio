@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="temp">
-      <p>In Progress</p>
-      <a href="../"> --> Back to Home</a>
+    <div>
+      <video autoplay muted loop id="myVideo">
+        <source src="../videos/dithered-video.mp4" type="video/mp4" />
+      </video>
+      <div class="content">
+        <div class="typewriter">
+          <h1>Projects</h1>
+          <p>In Progress...</p>
+          <a href="../"> --> Back to Home</a>
+        </div>
+
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+      </div>
     </div>
   </body>
 </html>

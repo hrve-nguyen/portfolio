@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans);
 
-:root {
-  --highlight-color: #b90000;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +10,98 @@ html {
   font-family: Pixelify Sans;
 }
 
-a {
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 1;
+  color: rgb(42, 42, 69);
+  width: 100%;
+  padding: 20px;
+}
+
+.content a {
+  color: rgb(42, 42, 69);
   text-decoration: none;
-  color: black;
-  margin-top: 1em;
   display: inline-block;
 }
 
-.temp {
-  text-align: center;
-  margin-top: 5em;
+.content a:hover {
+  text-decoration: underline;
 }
 
-a:hover {
-  text-decoration: underline;
+.content h1 {
+  color: rgb(42, 42, 69);
+  letter-spacing: 1rem;
+}
+
+.typewriter {
+  width: fit-content;
+}
+
+.typewriter h1,
+.typewriter p,
+.typewriter a {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 0.15em solid transparent;
+}
+
+.typewriter h1 {
+  border-right: 0.15em solid transparent;
+  font-size: clamp(1rem, 5vw, 2rem);
+  animation:
+    typing 2s steps(8, end) 0.5s forwards,
+    blink-caret 0.5s step-end 25,
+    hide-caret 0s 2.25s forwards;
+}
+
+.typewriter p {
+  border-right: 0.15em solid transparent;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  animation:
+    typing 3s steps(20, end) 4s forwards,
+    blink-caret 1s step-end 2s 4,
+    hide-caret 0s 5.5s forwards;
+}
+
+.typewriter a {
+  border-right: 0.15em solid transparent;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  animation:
+    typing 3s steps(16, end) 5s forwards,
+    blink-caret 0.9s step-end 5s 4,
+    hide-caret 0s 6s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: rgb(43, 36, 77);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes hide-caret {
+  to {
+    border-color: transparent;
+  }
 }
