@@ -4,6 +4,10 @@
   --highlight-color: #b90000;
 }
 
+body {
+  background-image: url("../images/resume_background.jpeg");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +23,7 @@ a {
   color: black;
   margin-top: 1em;
   display: inline-block;
+  padding: 0px;
 }
 
 .temp {
@@ -28,4 +33,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+object {
+  height: 100vh;
+  width: 100vw;
 }
